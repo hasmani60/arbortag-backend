@@ -18,15 +18,15 @@ from services.visualization import TreeVisualizer
 from services.report_generator import ReportGenerator
 
 # Initialize Supabase (Free PostgreSQL Database)
-SUPABASE_URL = os.environ.get("SUPABASE_URL", "your-project-url.supabase.co")
-SUPABASE_KEY = os.environ.get("SUPABASE_KEY", "your-anon-key")
+SUPABASE_URL = os.environ.get("SUPABASE_URL", "https://ukwsjdioezfddwnfkcqi.supabase.co")
+SUPABASE_KEY = os.environ.get("SUPABASE_KEY", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVrd3NqZGlvZXpmZGR3bmZrY3FpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjA1NzMzNDUsImV4cCI6MjA3NjE0OTM0NX0.CKEJQ10K3vCnYtQLXw_5aoljMceWtmvWiS2zGWsw1hI")
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 # Initialize Cloudinary (Free File Storage)
 cloudinary.config(
-    cloud_name=os.environ.get("CLOUDINARY_CLOUD_NAME", "your-cloud-name"),
-    api_key=os.environ.get("CLOUDINARY_API_KEY", "your-api-key"),
-    api_secret=os.environ.get("CLOUDINARY_API_SECRET", "your-api-secret")
+    cloud_name=os.environ.get("CLOUDINARY_CLOUD_NAME", "dj8u3batb"),
+    api_key=os.environ.get("CLOUDINARY_API_KEY", "741556951986669"),
+    api_secret=os.environ.get("CLOUDINARY_API_SECRET", "TiFwVq0-58v3KC_OHJqI92dtODM")
 )
 
 app = FastAPI(
